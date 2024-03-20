@@ -6,6 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '20kb' }));
 app.use(cookieParser());
+app.use(express.static("public"))
 
 //routers
 import userRouter from "./routes/user.routes.js"
